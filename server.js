@@ -5,10 +5,11 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles = {
+    'article-one': {
     title: 'Article one | Himanshu Ginkal',
     heading: 'Article one',
-    date: 'October 13, 2016',
+    date: 'October 3, 2016',
     content: `<p>
                 This is the content for the Article one on my webapp! Nice to see this is good going uptill now. Thanks Tanmai for doing this! This is helping a lot of people understand the concepts and how web applications work! Hopefully all of us make our own webApp in future and then surely remember IMAD-Team for this!
                 Cheers to this!
@@ -21,8 +22,42 @@ var articleOne = {
                 This is the content for the Article one on my webapp! Nice to see this is good going uptill now. Thanks Tanmai for doing this! This is helping a lot of people understand the concepts and how web applications work! Hopefully all of us make our own webApp in future and then surely remember IMAD-Team for this!
                 Cheers to this!
             </p>`
+},
+    'article-two': {
+    title: 'Article two | Himanshu Ginkal',
+    heading: 'Article two',
+    date: 'October 6, 2016',
+    content: `<p>
+                This is the content for the Article two on my webapp! Nice to see this is good going uptill now. Thanks Tanmai for doing this! This is helping a lot of people understand the concepts and how web applications work! Hopefully all of us make our own webApp in future and then surely remember IMAD-Team for this!
+                Cheers to this!
+            </p>
+            <p>
+                This is the content for the Article two on my webapp! Nice to see this is good going uptill now. Thanks Tanmai for doing this! This is helping a lot of people understand the concepts and how web applications work! Hopefully all of us make our own webApp in future and then surely remember IMAD-Team for this!
+                Cheers to this!
+            </p>
+            <p>
+                This is the content for the Article two on my webapp! Nice to see this is good going uptill now. Thanks Tanmai for doing this! This is helping a lot of people understand the concepts and how web applications work! Hopefully all of us make our own webApp in future and then surely remember IMAD-Team for this!
+                Cheers to this!
+            </p>`
+        
+    },
+    'article-three': {
+    title: 'Article three | Himanshu Ginkal',
+    heading: 'Article three',
+    date: 'October 9, 2016',
+    content: `<p>
+                This is the content for the Article three on my webapp! Nice to see this is good going uptill now. Thanks Tanmai for doing this! This is helping a lot of people understand the concepts and how web applications work! Hopefully all of us make our own webApp in future and then surely remember IMAD-Team for this!
+                Cheers to this!
+            </p>
+            <p>
+                This is the content for the Article three on my webapp! Nice to see this is good going uptill now. Thanks Tanmai for doing this! This is helping a lot of people understand the concepts and how web applications work! Hopefully all of us make our own webApp in future and then surely remember IMAD-Team for this!
+                Cheers to this!
+            </p>
+            <p>
+                This is the content for the Article three on my webapp! Nice to see this is good going uptill now. Thanks Tanmai for doing this! This is helping a lot of people understand the concepts and how web applications work! Hopefully all of us make our own webApp in future and then surely remember IMAD-Team for this!
+                Cheers to this!
+            </p>`}
 };
-
 function createTemplate(data){
         var title = data.title, heading = data.heading, date=data.date, content=data.content;
         var htmlTemplate = `
@@ -60,21 +95,13 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/article-one', function(req, res)
-{
-   res.send(createTemplate(articleOne));
-});
-app.get('/article-two', function(req, res)
-{
-   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-app.get('/article-three', function(req, res)
-{
-   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+app.get('/:articleName', function(req, res)
+{
+    //articleName==article-one
+    //articles[articleName] == articles(article-one) of articles!
+   var articleName = req.params.articleName;
+   res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/madi.png', function (req, res) {
