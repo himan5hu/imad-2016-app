@@ -1,6 +1,9 @@
 body {
     font-family: sans-serif;
     background-color: grey;
+    background:
+    url(https://hasura.io/blog/content/images/2016/09/hasurahorns-1.png) bottom center no-repeat,
+    url(http://www.hdwallpapery.com/static/images/free-background-wallpaper-image_EE5lqyX.jpg) repeat;
     margin-top: 75px;
 }
 
