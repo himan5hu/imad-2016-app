@@ -21,7 +21,7 @@ body {
 }
 
 .img-medium {
-    height: 150px;
+    height: 250px;
 }
 
 
@@ -30,6 +30,6 @@ body {
     height: 150px;
 }
 .bottomcenter {
-    margin-top: 300px;
+    margin-top: 200px;
     text-align: center;
 }
