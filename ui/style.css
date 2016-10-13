@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     background-color: grey;
     background: radial-gradient(circle, white, black);
-    background: url(sweettexture.jpg);
+    background: url(https://hasura.io/rstatic/resources/blog1photo-hasura-face.png);
     margin-top: 75px;
 }
 
