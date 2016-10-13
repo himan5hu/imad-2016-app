@@ -29,3 +29,7 @@ body {
     opacity: 0.6;
     height: 150px;
 }
+.bottomcenter {
+    margin-top: 300px;
+    text-align: center;
+}
