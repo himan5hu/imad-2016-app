@@ -1,10 +1,6 @@
 body {
     font-family: sans-serif;
     background-color: grey;
-    background:
-    url(https://hasura.io/blog/content/images/2016/09/hasurahorns-1.png) bottom center no-repeat,
-    url(http://www.hdwallpapery.com/static/images/free-background-wallpaper-image_EE5lqyX.jpg) repeat;
-    opacity: 0.6;
     margin-top: 75px;
 }
 
@@ -27,3 +23,12 @@ body {
     height: 150px;
 }
 
+.img-back {
+    width: 100%;
+    height: auto;
+}
+
+.icon {
+    opacity: 0.6;
+    height: 150px;
+}
