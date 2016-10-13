@@ -8,18 +8,21 @@ body {
 }
 
 .center {
+    margin-top: 75px;
     text-align: center;
 }
 
 .text-big {
+    margin-top: 75px;
     font-size: 300%;
 }
 
 .bold {
+    margin-top: 75px;
     font-weight: bold;
 }
 
 .img-medium {
-    height: 100px;
+    height: 150px;
 }
 
