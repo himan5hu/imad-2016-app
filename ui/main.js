@@ -8,10 +8,10 @@ function moveRight() {
      img.style.marginLeft = marginLeft+'px';
 }
 function moveLeftt() {
-     marginLeft = marginLeft-1;
+     marginLeft = marginLeft-10;
      img.style.marginLeft = marginLeft+'px';
 }
 img.onclick = function() {
     var intervalR = setInterval(moveRight, 10);
-    var intervalL = setInterval(moveLeft, 10);
+    var intervalL = setInterval(moveLeft, 200);
 };
