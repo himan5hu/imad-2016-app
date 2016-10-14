@@ -1,10 +1,7 @@
 console.log('Loaded!');
 //Change text of mainText division
-var element = document.getElementById('mainText');
-element.innerHTML = `New Value!`;
-
-//Move madi
-var img = document.getElementById('madi');
+//Move me
+var img = document.getElementById('me');
 var marginLeft=0;
 function moveRight() {
      marginLeft = marginLeft+1;
