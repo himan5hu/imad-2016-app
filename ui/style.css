@@ -3,7 +3,9 @@ body {
     color: #4f4b1c;
     background-color: LightBlue;
     background:url(http://www.cartoonlearning.com/wp-content/uploads/transparent-background-png-office-cubicle-front.png);
-    width:100%;
+    background-size: cover;     
+    background-repeat:  no-repeat;
+    background-position: center center;
     margin-top: 75px;
 }
 
