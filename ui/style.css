@@ -17,6 +17,8 @@ body {
 }
 
 .text-big {
+    font-family: sans-serif;
+    color: white;
     margin-top: 75px;
     font-size: 300%;
 }
