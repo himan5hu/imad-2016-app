@@ -39,6 +39,10 @@ body {
     margin-top: 100px;
     text-align: center;
 }
+.bottomcenter {
+    margin-top: 100px;
+    text-align: right;
+}
 .container{
     max-width: 1000px;
        color: #000000;
