@@ -6,11 +6,11 @@ body {
     background-size: cover;     
     background-repeat:  no-repeat;
     background-position: center center;
-    margin-top: 75px;
+    margin-top: 05px;
 }
 
 .center {
-    margin-top: 50px;
+    margin-top: 0px;
     padding-left: 100;
     padding-right: 100;
     text-align: center;
