@@ -26,6 +26,7 @@ body {
 .bold {
     margin-top: 75px;
     font-weight: bold;
+    font-size: 300%;
 }
 
 .img-medium {
