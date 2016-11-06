@@ -82,8 +82,6 @@ function createTemplate(data){
                     <div>
                     ${content}
                     </div>
-                    <h4>Thank You for all of this! </h4>
-                    You may not be seeing this but still
                     </div>
                 </body>
                 </html>
