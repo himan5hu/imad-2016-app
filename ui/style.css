@@ -42,10 +42,6 @@ body {
     padding: 9px 10px;
     margin-top: 5.5px;
     margin-bottom: 5.5px;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 0;
 }
 
 .icon {
